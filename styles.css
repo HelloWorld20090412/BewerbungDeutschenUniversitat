@@ -121,15 +121,41 @@ main {
 }
 
 .intro-band {
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(260px, 0.92fr);
-  gap: clamp(22px, 5vw, 58px);
-  align-items: center;
+  align-items: end;
+  overflow: hidden;
   min-height: 520px;
-  padding: 42px 0 30px;
+  margin: 28px 0 30px;
+  padding: clamp(34px, 7vw, 70px);
+  border-radius: 8px;
+  background: #0a2f36;
+  box-shadow: var(--shadow);
+}
+
+.intro-band::before {
+  position: absolute;
+  inset: -22px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/K%C3%B6lner_Dom_Panorama.jpg/1280px-K%C3%B6lner_Dom_Panorama.jpg");
+  background-position: center;
+  background-size: cover;
+  content: "";
+  filter: blur(10px);
+  transform: scale(1.06);
+}
+
+.intro-band::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(2, 18, 20, 0.82), rgba(2, 18, 20, 0.44)),
+    linear-gradient(180deg, rgba(2, 18, 20, 0.08), rgba(2, 18, 20, 0.62));
+  content: "";
 }
 
 .intro-copy {
+  position: relative;
+  z-index: 1;
   min-width: 0;
 }
 
@@ -142,6 +168,10 @@ main {
   text-transform: uppercase;
 }
 
+.intro-band .eyebrow {
+  color: #ffd49b;
+}
+
 h1,
 h2,
 h3,
@@ -152,6 +182,7 @@ p {
 h1 {
   max-width: 720px;
   margin: 0;
+  color: #fffdf7;
   font-size: clamp(36px, 6vw, 66px);
   line-height: 1.05;
   letter-spacing: 0;
@@ -174,8 +205,9 @@ h1 {
   padding: 8px 12px 8px 18px;
   border: 1px solid rgba(15, 118, 110, 0.24);
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.9);
   box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
 }
 
 .search-box span {
@@ -191,53 +223,6 @@ h1 {
   outline: 0;
   background: transparent;
   color: var(--ink);
-}
-
-.intro-visual {
-  position: relative;
-  min-width: 0;
-  overflow: hidden;
-  border: 1px solid rgba(15, 118, 110, 0.16);
-  border-radius: 8px;
-  background: #dde8e4;
-  box-shadow: var(--shadow);
-}
-
-.intro-visual img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  min-height: 320px;
-  object-fit: cover;
-}
-
-.summary-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  margin: 0 0 54px;
-}
-
-.summary-item {
-  display: grid;
-  min-height: 112px;
-  align-content: center;
-  padding: 20px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.86);
-}
-
-.summary-item strong {
-  color: var(--green-dark);
-  font-size: 34px;
-  line-height: 1;
-}
-
-.summary-item span {
-  margin-top: 8px;
-  color: var(--muted);
-  font-weight: 700;
 }
 
 .content-section {
@@ -501,20 +486,10 @@ h1 {
 
   .intro-band {
     grid-template-columns: 1fr;
-    min-height: auto;
-    padding-top: 34px;
-  }
-
-  .intro-visual {
-    order: -1;
-  }
-
-  .intro-visual img {
-    max-height: 300px;
+    min-height: 420px;
   }
 
   .resource-grid,
-  .summary-grid,
   .checklist {
     grid-template-columns: 1fr;
   }
