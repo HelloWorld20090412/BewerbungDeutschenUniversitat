@@ -1,0 +1,26 @@
+<svg width="760" height="560" viewBox="0 0 760 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="整理资料的书桌插画">
+  <rect x="58" y="66" width="646" height="408" rx="32" fill="#FFFDF6"/>
+  <rect x="58" y="66" width="646" height="408" rx="32" stroke="#DCE7DC" stroke-width="2"/>
+  <path d="M98 396C174 350 244 352 316 394C392 438 488 441 662 344V474H98V396Z" fill="#E8F3EE"/>
+  <rect x="112" y="116" width="260" height="168" rx="18" fill="#0A4F4A"/>
+  <rect x="136" y="146" width="152" height="14" rx="7" fill="#F7F8F2"/>
+  <rect x="136" y="178" width="194" height="12" rx="6" fill="#CBE6DE"/>
+  <rect x="136" y="206" width="124" height="12" rx="6" fill="#CBE6DE"/>
+  <circle cx="322" cy="236" r="28" fill="#F9B45F"/>
+  <path d="M304 236L318 250L344 220" stroke="#0A4F4A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="414" y="116" width="196" height="58" rx="18" fill="#EEF6FF"/>
+  <rect x="438" y="137" width="92" height="12" rx="6" fill="#2563EB"/>
+  <rect x="414" y="194" width="196" height="58" rx="18" fill="#FFF7ED"/>
+  <rect x="438" y="215" width="120" height="12" rx="6" fill="#B85C18"/>
+  <rect x="414" y="272" width="196" height="58" rx="18" fill="#FEF2F2"/>
+  <rect x="438" y="293" width="102" height="12" rx="6" fill="#B91C1C"/>
+  <rect x="154" y="326" width="350" height="34" rx="17" fill="#FFFFFF" stroke="#DCE7DC" stroke-width="2"/>
+  <circle cx="178" cy="343" r="8" fill="#0F766E"/>
+  <rect x="198" y="337" width="184" height="12" rx="6" fill="#9CA8A1"/>
+  <rect x="246" y="404" width="268" height="22" rx="11" fill="#0A4F4A"/>
+  <rect x="282" y="426" width="196" height="20" rx="10" fill="#DCE7DC"/>
+  <path d="M150 82C143 48 173 27 198 48C222 69 199 98 174 105" stroke="#0F766E" stroke-width="10" stroke-linecap="round"/>
+  <path d="M608 452C642 457 670 431 653 404C636 378 602 394 596 422" stroke="#B85C18" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="652" cy="104" r="18" fill="#F9B45F"/>
+  <circle cx="96" cy="478" r="14" fill="#2563EB"/>
+</svg>
