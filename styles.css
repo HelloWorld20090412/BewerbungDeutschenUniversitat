@@ -170,6 +170,7 @@ h1 {
   align-items: center;
   width: min(620px, 100%);
   min-height: 58px;
+  margin-top: 28px;
   padding: 8px 12px 8px 18px;
   border: 1px solid rgba(15, 118, 110, 0.24);
   border-radius: 18px;
@@ -195,14 +196,19 @@ h1 {
 .intro-visual {
   position: relative;
   min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(15, 118, 110, 0.16);
+  border-radius: 8px;
+  background: #dde8e4;
+  box-shadow: var(--shadow);
 }
 
 .intro-visual img {
   display: block;
   width: 100%;
-  min-height: 280px;
-  object-fit: contain;
-  filter: drop-shadow(0 24px 42px rgba(12, 56, 51, 0.16));
+  aspect-ratio: 16 / 10;
+  min-height: 320px;
+  object-fit: cover;
 }
 
 .summary-grid {
@@ -471,6 +477,11 @@ h1 {
   border-top: 1px solid var(--line);
   color: var(--muted);
   text-align: center;
+}
+
+.photo-credit {
+  margin-top: 8px;
+  font-size: 12px;
 }
 
 .hidden-by-search {
